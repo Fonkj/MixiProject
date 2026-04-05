@@ -1,6 +1,9 @@
 import pygame
 import sys
 import random
+from rembg import remove
+from PIL import Image
+import io
 
 # --- Configuration & Constants ---
 SCREEN_WIDTH = 1280
@@ -36,7 +39,7 @@ class SoundManager:
 class SpriteManager:
     def __init__(self):
         self.mixi_frames = self.load_character_animations("mixi", "image1.png")
-        self.vu_frames = self.load_character_animations("vu", "image2.png")
+        self.vu_frames = self.load_character_animations("vu", "image5.png")
         
         # Load Flip-flop
         try:
